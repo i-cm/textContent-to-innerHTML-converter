@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>textContent to innerHTML converter</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            function convert() {
+                text = document.getElementById("text"). textContent;
+                document.getElementById("html").innerHTML = text;
+            }
+        </script>
+    </head>
+    <body>
+        <form>
+            <h1>Hello world!</h1>
+            <input id="text"></input>
+            <label for="text">Text</label>
+            <button onclick="convert()">Convert</button><br>
+            <text id="html"></text>
+        </form>
+    </body>
+</html>
